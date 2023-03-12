@@ -1,0 +1,11 @@
+<div *ngIf="transazione" [ngClass]="{'invoice': transazione.type=='invoice', 'deposit': transazione.type=='deposit', 'withdrawal': transazione.type=='withdrawal'}">
+   
+    <h3>{{transazione.business}}</h3>
+    <ul style="list-style: none">
+        <li>{{transazione.name}}</li>
+        <li>Account: {{transazione.account}}</li>
+        <li>Date: {{transazione.date | date}}</li>
+        <li>Type: {{transazione.type}}</li>
+        <li [class.amount]="transazione.amount >700">Amount: ${{transazione.amount}}</li>
+    </ul>
+</div>

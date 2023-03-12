@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+.invoice {
+    background-color: #008000;
+}
+
+.deposit{
+    background-color: #83ffda;
+}
+
+.withdrawal{
+    background-color: #6c6c6c;
+}
+
+.amount{
+    background-color: #ffff00;
+}
+div{
+    border: 1px #000000 solid;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    width: 32%;
+    display:inline-block;
+}
+
+div h3{
+    margin-left: 10px;
+}
+
+ul{
+    width: 90%;
+}
+
